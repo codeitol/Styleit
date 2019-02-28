@@ -1,0 +1,290 @@
+.custom-navbar{
+	box-shadow: 10px 10px 10px #eee; 
+	z-index:;
+	background-color: #000;
+	font-size: 32px;
+	line-height: 35px;
+}
+.custom-navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 35px;
+}
+.custom-navbar .navbar-brand span {
+    color: #f9c200;
+}
+.custom-navbar .a{
+	transition: ease-in-out 0.3s;
+    -webkit-transition: ease-in-out 0.3s;
+    -moz-transition: ease-in-out 0.3s;
+    -ms-transition: ease-in-out 0.3s;
+    color: #f9c200;
+    text-decoration: none !important;
+}
+.nav-link{
+	color: #fff!important;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+	letter-spacing: .3px;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: #f9c200;
+}
+
+.custom-toggler .navbar-toggler-icon{
+	width: 18px!important;
+}
+.custom-toggler:hover{
+	border-color: rgb(255,255,255); background-color: #f9c200;
+}
+#logo_custom{
+		margin-top: -6px;
+}
+@media only screen and (max-width: 760px){ 
+	#logo_custom{
+		width: 40%;
+	}
+}
+.collapse .navbar-nav li a:hover{
+     color: #999 !important;
+}
+.space{
+	padding-top: 100px;
+}                        
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:300,400,500,700');
+html, body {
+	min-height: 100%;
+}
+body {
+	background: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+/*---------------------------------------
+   Typorgraphy
+-----------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h4 {
+	font-weight: 500;
+}
+h1 {
+	font-size: 50px;
+}
+h2 {
+	color: #272727;
+	font-size: 36px;
+	line-height: 52px;
+	margin: 0px;
+}
+h3 {
+	font-size: 16px;
+	line-height: 32px;
+}
+h4 {
+	color: #454545;
+	font-size: 18px;
+	line-height: 26px;
+}
+h5 {
+	letter-spacing: 0.5px;
+}
+p {
+	color: #777;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+}
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+
+/*---------------------------------------
+   Footer section
+-----------------------------------------*/
+
+footer {
+	background: #f9c200 url(../images/5.jpeg) no-repeat center;
+	background-size: cover;
+	padding: 40px 0;
+	text-align: center;
+	opacity: .9;
+}
+.socialLinks {
+	margin-bottom: 20px;
+}
+.socialLinks a {
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	margin: 0 5px;
+	width: 36px;
+	height: 36px;
+	background: #f9c200;
+}
+.socialLinks a:hover {
+	color: #f9c200;
+	background: #fff;
+}
+/*==========================
+general
+============================*/
+.back{
+  background :#f9f9f9;
+  padding-top: 20px;
+}
+
+footer .footer-copyright p {
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-size: 100% 100%;
+    background-color: #000 !important;
+    border-radius: 100px;
+}
+.ml-4 h3{
+	margin-bottom: 0px;
+	line-height: 25px;
+}
+.choice{
+	display: block;
+	width: 100px;
+	height: 25px;
+	background-color: #000 !important;
+	border: 1px solid black;
+	color: #fff;
+	vertical-align: middle;
+	padding-left: 7px;
+}
+.choice span{
+	color: #f9c200;
+}
+.cont p{
+	margin-bottom: 0px;
+}
+.vl {
+  border-left: 2px solid;
+  padding-left: 2px;
+  border-color: #999 !important;
+  /*height: 2px;*/
+}
+.color-change{
+	color: #dc3d24;
+}
+.ml-3 li{
+	font-weight: 200;
+}
+
+/*=====================
+buttons
+=====================*/
+.btn-pro {
+    background: #f9c200;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    width: 170px;
+    padding: 5px 28px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    border: none;
+
+}
+.btn-pro:hover{
+     color:#f9c200;
+     background-color: #000;
+}
+.btn-wish{
+	background-color: #007bff;
+	color: #fff;
+	 width: 170px;
+	 font-size: 12px;
+    font-weight: 700;
+    padding: 5px 28px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    border: none;
+}
+.btn-wish:hover{
+     color: #007bff;
+     background-color: #000;
+}
+
+
+/*==================================
+social midia links for constant
+====================================*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 26%;
+  -webkit-transform: translateY(-0%);
+  -ms-transform: translateY(-0%);
+  transform: translateY(-0%);
+ -webkit-transform: translateX(2400%) !important;
+  -ms-transform: translateX(2400%) !important;
+  transform: translateX(2450%) !important;
+  z-index: 300;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}

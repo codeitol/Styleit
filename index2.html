@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Style It</title>
+<!-- meta tags -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="google-signin-client_id" content="767147015712-aoo7ua1tuhkgikiojilvg0lj0u4modc5.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="style.js"></script>
+    <style type="text/css">
+      .g-signin2{
+        margin-left: 600px;
+      }
+        .data{
+            display: none;
+        }
+    </style>
+
+
+<!-- Fontawesome css -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style2.css">
+
+<!-- w3 refrences for animation -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<!-- The social media icon bar -->
+<div class="icon-bar float-right">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+<!-- PRE LOADER -->
+<div class="preloader">
+  <div class="cssload-dots">
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+    <div class="cssload-dot"></div>
+  </div>
+</div>
+
+<!-- Navigation Section -->
+<div class="navbar custom-navbar wow fadeInDown" data-wow-duration="2s" role="navigation" id="header">
+  <div class="container">
+    <!-- NAVBAR HEADER -->
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> <span class="icon icon-bar"></span> </button>
+      <!-- lOGO TEXT HERE -->
+      <a href="index.html" class="navbar-brand" data-animate-scroll='{"rotation": "180","duration": "1.5","scaleX": "0","scaleY": "0"}'>Style <span>It</span></a> </div>
+ 
+      <!-- NAVIGATION LINKS -->
+      <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home" class="smoothScroll">Home</a></li>
+        <li><a href="#about" class="smoothScroll">About</a></li>
+        <li><a href="#products" class="smoothScroll">Products</a></li>
+        <li><a href="#service" class="smoothScroll">Service</a></li>
+        <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        <li><span class="calltxt"><i class="fa fa-phone" aria-hidden="true"></i> 654 987 1234</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Home Section -->
+<div id="home" class="parallax-section thetop">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-1 col-md-10 col-sm-12">
+        <div class="slide-text">
+          <h3 data-animate-scroll='{"y":"50", "duration": "1.75","scaleX": "0","scaleY": "0"}' class="animateScroll">Deal Of The Day</h3>
+          <h1>Welcome to Style It!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="views/product.html" class="btn btn-default section-btn" data-animate-scroll='{"duration": "2","scaleX": "0","scaleY": "0"}'>Get Started</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button></div>
+<div id="about" >
+  <div class="section-title" >
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>About <span>Us</span></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.</p>
+      <h4><b>Hello,</b></h4><div class="data"><h4 id="Name"></h4>
+        <img id="pic" class="img-circle" width="100" height="100">
+        
+        <button onclick="signOut()" class="btn section-btn ">signOut</button>
+      </div>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  </div>
+</div>
+  <div class="section-title space" id="products" >
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Our <span>Products</span></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.</p>
+  </div>
+<!-- images gallery -->
+<div class="container ">
+  <div class="row scr">
+      <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+        <a href="views/product.html"><img src="http://zoenewlove.com/wp-content/uploads/2015/10/My-Olympia-Beauty-Haul-2015-Sigma2C-NYX-Cosmetics-26-Inglot.png" class="dis-img rounded img-fluid"  alt="Cosmetics">
+        <div class="img-title">Beauty & Care </div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="dis-block">
+      <a href="views/product.html"><img data-animate-scroll='{"y":"50", "duration": ".25","scaleX": "0","scaleY": "0" ,"easingType": "ease-out"}' src="https://freedesignfile.com/upload/2017/06/Fashion-summer-women-and-cosmetics-and-accessories-HD-picture-06.jpg" class="dis-img rounded img-fluid "  alt="Fashion">
+      <div class="img-title ">Fashion</div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="dis-block">
+      <a href="views/product.html"><img  src="http://www.myafricanmagazine.com/wp-content/uploads/2018/05/Fifa-world-cup-2014-brazil-Stadium-wallpaper1.jpg" class="dis-img rounded img-fluid"  alt="Sports">
+      <div class="img-title ">Sports </div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+      <a href="views/product.html"><img  src="https://previews.123rf.com/images/photobac/photobac1302/photobac130200001/17665280-pile-of-various-female-shoes-over-white.jpg" class="dis-img rounded img-fluid"  alt="Footwear">
+      <div class="img-title ">Footwear </div>  </a>
+        </div>
+       </div>    
+      <!--/div-->
+      <!--div class="row scr"-->
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+        <a href="views/product.html"><img  src="https://cdn.pixabay.com/photo/2015/06/27/16/34/computer-823613_960_720.jpg" class="dis-img rounded img-fluid"  alt="Gadgets">
+        <div class="img-title ">Appliances </div>  </a>
+        </div>
+          </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+      <a href="views/product.html"><img src="https://images.unsplash.com/photo-1523575708161-ad0fc2a9b951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img rounded img-fluid"  alt="Home Decor">
+      <div class="img-title ">Home Decor </div>  </a>
+        </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+        <a href="views/product.html"><img src="https://sheroes.com/img/uploads/article/high_res/ws_Gadgets_&_Books_1920x1200.jpg" class="dis-img rounded img-fluid"  alt="Gadgets">
+        <div class="img-title ">Gadgets </div>  </a>
+        </div>
+        </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block">
+        <a href="views/product.html"><img src="https://images.unsplash.com/photo-1523575708161-ad0fc2a9b951?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img rounded img-fluid"  alt="Furniture">
+        <div class="img-title ">Furniture </div></a>
+        </div>
+        </div>    
+   </div>
+</div>
+  <div class="section-title space" id="service">
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Our <span>Services</span></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.</p>
+  <div  id="myBtnContainer">
+  <li class="btn active" onclick="filterSelection('all')" >All</li>
+  <li class="btn " onclick="filterSelection('gra')">Fashion</li>
+  <li class="btn " onclick="filterSelection('elec')">Electronics</li>
+  <li class="btn " onclick="filterSelection('hd')">Home Decor</li>
+  <li class="btn " onclick="filterSelection('bk')">Books</li>
+  <li class="btn " onclick="filterSelection('gf')">Gifts</li></div></div>
+  <div class="container">
+  <div class="row scr">
+      <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv gra">
+        <a href="views/product.html"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Hot-fashion-model-teresa-moore-wallpaper-hd-620x349.jpg" class="dis-img2 rounded img-fluid"  alt="Fashion">
+        <div class="img-title2">Fashion</div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="dis-block2 filterDiv elec">
+      <a href="views/product.html"><img  src="https://images.unsplash.com/photo-1533193045359-7855d8ed65f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img2 rounded img-fluid"  alt="Electronics">
+      <div class="img-title2 ">Electronics</div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="dis-block2 filterDiv elec">
+      <a href="views/product.html"><img  src="https://images.unsplash.com/photo-1533193045359-7855d8ed65f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img2 rounded img-fluid"  alt="Gadgets">
+      <div class="img-title2 ">Gadgets</div>  </a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv gra gf">
+      <a href="views/product.html"><img  src="https://ak8.picdn.net/shutterstock/videos/20586688/thumb/8.jpg" class="dis-img2 rounded img-fluid"  alt="Gifts">
+      <div class="img-title2 ">Gifts</div>  </a>
+        </div>
+       </div>    
+      <!--/div-->
+      <!--div class="row scr"-->
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv bk">
+        <a href="views/product.html"><img  src="https://images.unsplash.com/photo-1491841651911-c44c30c34548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img2 rounded img-fluid"  alt="Books">
+        <div class="img-title2 ">Books</div>  </a>
+        </div>
+          </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv bk">
+      <a href="views/product.html"><img src="https://images.unsplash.com/photo-1491841651911-c44c30c34548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img2 rounded img-fluid"  alt="Books">
+      <div class="img-title2 ">Study</div>  </a>
+        </div>
+        </div>
+
+        <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv elec hd">
+        <a href="views/product.html"><img src="https://images.unsplash.com/photo-1533193045359-7855d8ed65f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="dis-img2 rounded img-fluid"  alt="Gadgets">
+        <div class="img-title2 ">Electronics & Home</div>  </a>
+        </div>
+        </div>
+
+          <div class="col-md-3 col-sm-4 col-xs-12 ">
+        <div class="dis-block2 filterDiv hd">
+        <a href="views/product.html"><img src="https://ae01.alicdn.com/kf/HTB1sKcpcEFWMKJjSZFvq6yenFXaJ/Canvas-Wall-Art-Pictures-Frames-Living-Room-5-Pieces-Enchanted-Tree-Scenery-Paintings-Home-Decor-HD.jpg_640x640.jpg" class="dis-img2 rounded img-fluid"  alt="Home decor">
+        <div class="img-title2 ">Home Decor</div>  </a>
+        </div>
+        </div>    
+   </div>
+</div>
+
+<!-- testmonial section -->
+<div class="test-shadow">
+<div class="container">
+<div class="section-title space">
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Few <span>Words</span></h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div></div></div>
+
+
+
+  <div class="section-title space">
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Our <span>Videos</span></h3>
+<!-- Video gallery -->
+<div class="container ">
+  <div class="row scr">
+      <div class="col-md-6 col-sm-12 col-xs-12 ">
+        <div class="vid">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div data-animate-scroll='{"y":"-100","duration": "1.5","scaleX": "0","scaleY": "0"}'>Beauty & Care </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aJOTlE1K90k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div data-animate-scroll='{"y":"-100","duration": "1.5","scaleX": "0","scaleY": "0"}' >Fashion</div>
+        </div>
+      </div>  
+              
+   </div>
+</div></div>
+
+<div class="section-title space">
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Our <span>Work</span></h3></div>
+<div class="container" >
+<div class="row">
+  <div class="col-md-3 col-sm-6 col-xs-12" >
+  <div class="card">
+  <img data-animate-scroll='{"y":"50", "duration": "1","scaleX": "0","scaleY": "0" ,"easingType": "ease-out"}' class="card-img-top img-circle" style="height: auto; width: 90%" src="images/2.jpg" alt="Card image">
+  <div class="card-body" data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1.25"}'>
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.Some example text.Some example text.Some example text.Some example text.Some example text.</p>
+  </div>
+</div></div>
+  <div class="col-md-3 col-sm-6 col-xs-12" ><div class="card">
+  <img data-animate-scroll='{"y":"50", "duration": "1","scaleX": "0","scaleY": "0" ,"easingType": "ease-out"}' class="card-img-top img-circle" style="height: auto; width: 90%" src="images/2.jpg" alt="Card image">
+  <div class="card-body" data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1.25"}'>
+    <h4 class="card-title">John Doe</h4>
+    <p class="card-text">Some example text.Some example text.Some example text.Some example text.Some example text.Some example text.</p>
+  </div>
+</div></div>
+  <div class="col-md-3 col-sm-6 col-xs-12">
+  <div class="card">
+  <img data-animate-scroll='{"y":"50", "duration": "1","scaleX": "0","scaleY": "0" ,"easingType": "ease-out"}' class="card-img-top img-circle" style="height: auto; width: 90%" src="images/2.jpg" alt="Card image">
+  <div class="card-body " data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1.25"}'>
+    <h4 class="card-title">John Doe2</h4>
+    <p class="card-text" >Some example text.Some example text.Some example text.Some example text.Some example text.Some example text.</p>
+  </div>
+</div></div>
+  <div class="col-md-3 col-sm-6 col-xs-12" ><div class="card">
+  <img data-animate-scroll='{"y":"50", "duration": "1","scaleX": "0","scaleY": "0" ,"easingType": "ease-out"}' class="card-img-top img-circle" style="height: auto; width: 90%" src="images/2.jpg" alt="Card image">
+  <div class="card-body" data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1.25"}'>
+    <h4 class="card-title">John Doe</h4>
+<p class="card-text">Some example text.Some example text.Some example text.Some example text.Some example text.Some example text.</p>
+  </div>
+</div></div>
+</div>
+</div>
+
+<!-- Contact Section -->
+<div class="container space" id="contact">
+
+    <!-- Dection Title -->
+    <div class="section-title" >
+      <h3 data-animate-scroll='{"x": "-200","y": "10", "alpha": "0", "duration": "1"}'>Contact <span>Us</span></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, massa ac ornare feugiat, nunc dui auctor ipsum, sed posuere eros sapien id quam. Maecenas odio nisi, efficitur eget.</p>
+    </div>
+
+    <!-- CONTACT FORM HERE -->
+    <div class="row">
+      <div class="col">
+        <div class="contact-form">
+          <form id="contact-form" class="row">
+            <div class="col-md-6 col-sm-6">
+              <input type="text" class="form-control" name="name" placeholder="Name" required  >
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <input type="email" class="form-control" name="email" placeholder="Email" required >
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <input type="tel" class="form-control" name="phone" placeholder="Phone">
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <input type="text" class="form-control" name="address" placeholder="Address">
+            </div>
+            <div class="col-md-12 col-sm-12">
+              <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="col-md-12">
+              <button id="submit" type="submit" class="form-control" name="submit">Send Message</button>
+            </div>
+          </form></div></div></div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2817228528106!2d-74.01444984947464!3d40.711814279230445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1a27c4829b%3A0x6ccc3ccd998e8b1d!2sWorld+Trade+Center%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1551356310949" width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
+<!-- Footer Section -->
+<footer>
+  <div class="container space">
+    <!-- social Section -->
+    <div class="socialLinks" >
+      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="footer-copyright">
+          <p>&copy; 2019 Style It | All Rights Reserved |<a href="views/privacy.html"> Privacy Policy.</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap -->
+<script src="http://sharjeelanjum.com/html/car-rental/html/js/jquery-2.1.4.min.js"></script>
+<script src="http://sharjeelanjum.com/html/car-rental/html/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://sharjeelanjum.com/html/car-rental/html/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+
+
+<!-- Sticky Header -->
+<script src="js/jquery.sticky.js"></script>
+
+
+<!-- Custom javascript-->
+<script src="js/custom.js"></script>
+
+<!-- css animation plugins -->
+<script src="js/Greensock/EasePack.min.js"></script>
+<script src="js/Greensock/EaselPlugin.min.js"></script>
+<script src="js/Greensock/ScrollToPlugin.min.js"></script>
+<script src="js/Greensock/TweenMax.min.js"></script>
+<script src="animate-scroll/animate-scroll.js"></script>
+<script type="text/javascript">
+  $(document).animateScroll();  
+</script>
+</body>
+</html>
